@@ -1,0 +1,114 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --bg-color: #f8f9fa;
+}
+
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2rem; /* Adjust this value to make the name smaller */
+  margin-bottom: 20px;
+}
+
+.img-fluid {
+  width: 250px; /* Increase the width for a larger image */
+  height: auto; /* Maintain aspect ratio */
+  border: 3px solid #007bff;
+}
+
+.social-links a {
+    font-size: 1.5rem; /* Icon size */
+    margin: 0 10px; /* Spacing between icons */
+    color: #007bff; /* Icon color */
+    transition: color 0.3s, transform 0.3s ease; /* Smooth color and scaling transition on hover */
+}
+
+.social-links a:hover {
+    color: #0056b3; /* Darker color on hover */
+    transform: scale(1.2); /* Scale up slightly on hover */
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+.nav-link {
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+.nav-link:hover {
+  background-color: #f0f0f0;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Reduce the padding inside the card */
+.card-body {
+    padding: 0.75rem; /* Smaller padding inside the card */
+}
+
+/* Optional: adjust the image size */
+.card-img-top {
+    height: auto; /* Keep the aspect ratio */
+    max-height: 150px; /* Reduce the height of the image */
+}
+
+/* Modal Styling */
+.modal-body p {
+  font-size: 16px;
+}
+
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 20px; /* Optional margin between cards */
+}
+
+.card-header {
+    background-color: #f8f9fa;
+}
+
+.card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-body p {
+    margin-bottom: 10px;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.btn-link:hover {
+    color: #0056b3;
+}
+
+
+/* Media queries */
+@media (max-width: 768px) {
+    .img-fluid {
+        width: 200px; /* Adjust image size for smaller screens */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Make the name smaller on mobile */
+    }
+
+    .nav-link {
+        font-size: 16px; /* Adjust nav link size for mobile */
+    }
+}
